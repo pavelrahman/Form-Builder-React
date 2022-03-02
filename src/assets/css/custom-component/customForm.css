@@ -1,0 +1,19 @@
+.custom-form {
+    border: 2px solid red;
+    padding: 8px;
+}
+
+.custom-form > .form-title {
+    color: green;
+    padding: 8px;
+    text-align: center;
+    background-color: lightgreen;
+}
+
+.custom-form > form > .custom-input {
+    width: 50%;
+}
+
+.custom-form > form > .form-button {
+    width: 100%;
+}

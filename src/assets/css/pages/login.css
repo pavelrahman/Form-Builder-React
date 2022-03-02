@@ -1,0 +1,10 @@
+.login {
+    width: 500px;
+    position: fixed;
+    left: 30%;
+    top: 30%;
+}
+
+.login > form > .custom-input {
+    width: 100%;
+}
