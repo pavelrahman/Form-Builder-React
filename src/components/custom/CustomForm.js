@@ -10,8 +10,8 @@ const customForm = (props) => {
         <h1 className={'form-title'}>{title}</h1>
         <form onSubmit={onSubmit} >
         {formData && formData.map((field, index) => {
-            console.log(field)
-            return <CustomInput 
+            return <CustomInput
+            className={field.className} 
             key={index}
             label={field.label} 
             type={field.type}

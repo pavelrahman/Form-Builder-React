@@ -2,10 +2,10 @@ import React, {useState} from "react";
 import { utils } from "../utils/utils";
 import { constant } from "../constant/constant";
 import CustomForm from "../components/custom/CustomForm";
-import '../assets/css/pages/login.css';
+import '../assets/css/pages/sign-up.css';
 
-const login = (props) => {
-    const [formState, setFormState] = useState(utils.createStateData(constant.formData.login.data));
+const signUp = (props) => {
+    const [formState, setFormState] = useState(utils.createStateData(constant.formData.signUp.data));
 
     const onChangeHandler = (event, fieldType, fieldName) => {
         setFormState((prevState) => {
@@ -21,13 +21,13 @@ const login = (props) => {
         console.log(formState);
     }
 
-    return <CustomForm formData = {constant.formData.login.data}
-        className={`${props.className} ${constant.formData.login.style.background}`}
+    return <CustomForm formData = {constant.formData.signUp.data}
+        className={`${props.className} ${constant.formData.signUp.style.background}`}
         formState = {formState}
-        title={constant.formData.login.title}
+        title={constant.formData.signUp.title}
         onChange = {onChangeHandler}
         onSubmit = {onSubmit}
     />
 }
 
-export default login;
+export default signUp;

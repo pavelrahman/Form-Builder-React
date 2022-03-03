@@ -1,15 +1,14 @@
 import React, {useState, useEffect} from 'react';
-import CustomInput from './components/custom/CustomInput';
-import CustomForm from './components/custom/CustomForm';
-import { utils } from './utils/utils';
-import { constant } from './constant/constant';
 import Login from './pages/Login';
+import SignUp from './pages/Signup';
+import './app.css';
 
 const App = (props) => {
     
     
     return <div className='app'>
-            <Login className={'login'}/>
+            <SignUp className={'sign-up'}/>
+            <Login className={'LogIn'}/>
            </div>
 }
 
